@@ -28,14 +28,14 @@ class BlogPost(models.Model):
 
 class LRAQWorker(models.Model):
     # pk aka id --> numbers
-    saId       = models.CharField(max_length=10,
+    saId       = models.CharField(max_length=100,
                             unique=True,
                             verbose_name="SA GUS Id",
                             help_text="Required.")
-    surveyLink   = models.CharField(max_length=10, 
+    surveyLink   = models.CharField(max_length=100, 
                             verbose_name="Survey Link",
                             help_text="URL to the Survey")
-    surveyId       = models.CharField(max_length=10,
+    surveyId       = models.CharField(max_length=100,
                             unique=True,
                             verbose_name="SA Number",
                             help_text="Required. Example: SA-000002")
