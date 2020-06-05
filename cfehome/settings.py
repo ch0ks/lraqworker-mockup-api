@@ -142,8 +142,8 @@ JWT_AUTH = {
     'JWT_VERIFY_EXPIRATION': True,
     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=900),
     'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
-    'JWT_RESPONSE_PAYLOAD_HANDLER':
-    'cfehome.utils.jwt_response_payload_handler',
+    'JWT_RESPONSE_PAYLOAD_HANDLER':'cfehome.utils.jwt_response_payload_handler',
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer'
 }
 
 django_heroku.settings(locals())
