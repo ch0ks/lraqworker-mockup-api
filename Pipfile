@@ -11,7 +11,6 @@ markdown = "*"
 django-filter = "*"
 djangorestframework-jwt = "*"
 drf-yasg = "*"
-pinax-templates = "*"
 
 [requires]
 python_version = "3.7"

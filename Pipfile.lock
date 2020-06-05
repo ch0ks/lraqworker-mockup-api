@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0d7b575983a0957c28bd944e5273a03236493ce22dd05e1828d5e2e74866783f"
+            "sha256": "0e8454f05936eaadbf1e3abbb9dfd5cd385b2ab75b9a87d2374b1921a11b4100"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -57,12 +57,6 @@
                 "sha256:e1630333248c9b3d4e38f02093a26f1e07b271ca896d73097457996e0fae12e8"
             ],
             "version": "==3.0.7"
-        },
-        "django-bootstrap-form": {
-            "hashes": [
-                "sha256:de3f7893e515352834d446c441c0cb861637f92cebbe59d8229469c6cd3dc640"
-            ],
-            "version": "==3.4"
         },
         "django-filter": {
             "hashes": [
@@ -184,14 +178,6 @@
                 "sha256:998416ba6962ae7fbd6596850b80e17859a5753ba17c32284f67bfff33784181"
             ],
             "version": "==20.4"
-        },
-        "pinax-templates": {
-            "hashes": [
-                "sha256:0bb293e9a080603b923a31b8ddb1a1902789dbce5ce02592703a7096fc41d6e8",
-                "sha256:a8adb17ec4996031502772f6e05d07204181a1231c63b6a650af74891d716d5a"
-            ],
-            "index": "pypi",
-            "version": "==2.0.6"
         },
         "pyjwt": {
             "hashes": [

@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'postings',
-    "bootstrapform",
-    "pinax.templates",
 ]
 
 MIDDLEWARE = [
@@ -59,7 +57,7 @@ ROOT_URLCONF = 'cfehome.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
