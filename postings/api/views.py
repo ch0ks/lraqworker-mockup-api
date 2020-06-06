@@ -59,13 +59,14 @@ class LRAQWorkerAPIView(mixins.CreateModelMixin, generics.ListAPIView): # Detail
         query = self.request.GET.get("q")
         if query is not None:
             qs = qs.filter(
-                    Q(title__icontains=query)|
-                    Q(content__icontains=query)
+                    Q(surveyId__icontains=query)|
+                    Q(saId__icontains=query)|
+                    Q(surveyLink__icontains=query)
                     ).distinct()
         return qs
 
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
+        serializer.save()
 
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
@@ -77,6 +78,7 @@ class LRAQWorkerAPIView(mixins.CreateModelMixin, generics.ListAPIView): # Detail
 class LRAQWorkerRudView(generics.RetrieveUpdateDestroyAPIView): # DetailView CreateView FormView
     lookup_field            = 'surveyId' # slug, id # url(r'?P<pk>\d+')
     serializer_class        = LRAQWorkerSerializer
+    permission_classes      = [IsOwnerOrReadOnly]
     #permission_classes      = [IsOwnerOrReadOnly]
     #queryset                = BlogPost.objects.all()
 

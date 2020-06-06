@@ -45,4 +45,5 @@ class LRAQWorker(models.Model):
 
     
     def get_api_url(self, request=None):
-        return api_reverse("api-postings:lraqworker-rud", kwargs={'surveyId': self.surveyId}, request=request)
+#        return api_reverse("api-lraqworker:lraqworker-rud", kwargs={'surveyId': self.surveyId}, request=request)
+        return api_reverse("api-lraqworker:lraqworker-rud", kwargs={'surveyId': self.surveyId}, request=request)
